@@ -15,11 +15,13 @@
         ctx.beginPath();  //start drawing
         ctx.arc(80,40,10,0,2*Math.PI); //draw smaller cirle (because circle above is bigger)
         ctx.stroke();  //end drawing
-		ctx.arc(110,40,10,0,2*Math.PI); //draw smaller cirle (because circle above is bigger)
+		ctx.beginPath();  //start drawing
+        ctx.arc(110,40,10,0,2*Math.PI); //draw smaller cirle (because circle above is bigger)
         ctx.stroke();  //end drawing
-		
-		
         ctx.closePath();
+		ctx.beginPath();  //start drawing
+        ctx.arc(95,60,20,0,1*Math.PI); //draw smaller cirle (because circle above is bigger)
+        ctx.stroke();  //end drawing
         </script>
     </body>
 </html>
