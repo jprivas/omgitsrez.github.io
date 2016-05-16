@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/toggle-sidebar.css" rel="stylesheet">
 		<title> Calculator </title>
 	</head>
 	<body>
+		<script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
 		<script>
 			function uIn(n)
 				{
@@ -31,17 +35,34 @@
 				}		
 			function output(res)
 				{
-				  alert(res);
+				  (res);
 				}
 		</script>
 		<form name="calc">
           Num1: <input type="text" id="num1"><br>
           Num2: <input type="text" id="num2"><br>
 		</form>
-		<button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
-		<button onclick="subt(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button>
-		<button onclick="divd(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
-		<button onclick="mult(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
+		<a class="btn">Click</a>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
+				</div>
+				<div class="col-md-6">	
+					<button onclick="subt(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button>	
+				</div>
+			</div>
+		</div> 
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<button onclick="divd(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
+				</div>
+				<div class="col-md-6">	
+					<button onclick="mult(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
+				</div>
+			</div>
+		</div>
 	</body>
 
 </html>
