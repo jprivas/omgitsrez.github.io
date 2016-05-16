@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Calculator </title>
+	</head>
+	<body>
+		<script>
+			function uIn(n)
+				{
+					return parseInt(n); 
+				}
+			function add(x, y)
+				{
+					sum=uIn(x) + uIn(y);
+					output(sum);
+				}
+			function subt(x, y)
+				{
+					sum=uIn(x) - uIn(y);
+					output(sum);
+				}
+			function divd(x, y)
+				{
+					sum=uIn(x) / uIn(y);
+					output(sum);
+				}
+			function mult(x, y)
+				{
+					sum=uIn(x) * uIn(y);
+					output(sum);
+				}		
+			function output(res)
+				{
+				  alert(res);
+				}
+		</script>
+		<form name="calc">
+          Num1: <input type="text" id="num1"><br>
+          Num2: <input type="text" id="num2"><br>
+		</form>
+		<button onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
+		<button onclick="subt(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button>
+		<button onclick="divd(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
+		<button onclick="mult(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
+	</body>
+
+</html>
